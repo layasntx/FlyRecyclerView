@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FlyRecyclerView.iml" filepath="$PROJECT_DIR$/FlyRecyclerView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flyrecyclerview/flyrecyclerview.iml" filepath="$PROJECT_DIR$/flyrecyclerview/flyrecyclerview.iml" />
     </modules>
   </component>
 </project>

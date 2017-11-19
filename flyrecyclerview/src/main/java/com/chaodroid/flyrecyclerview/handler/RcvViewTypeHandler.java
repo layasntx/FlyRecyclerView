@@ -2,7 +2,7 @@ package com.chaodroid.flyrecyclerview.handler;
 
 import android.support.annotation.IntRange;
 
-import com.chaodroid.flyandroid.recyclerview.bean.RcvViewType;
+import com.chaodroid.flyrecyclerview.bean.RcvViewType;
 
 /**
  * Created by CHEN on 2016/11/13.

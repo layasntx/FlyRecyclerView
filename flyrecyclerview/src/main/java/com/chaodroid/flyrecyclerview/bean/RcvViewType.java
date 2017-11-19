@@ -6,10 +6,10 @@ package com.chaodroid.flyrecyclerview.bean;
 
 public interface RcvViewType {
 
-    public static final int TYPE_ITEM_START = 0;
-    public static final int TYPE_ITEM_END = 9999;
-    public static final int TYPE_HEAD_START = 10000;
-    public static final int TYPE_HEAD_END = 19999;
-    public static final int TYPE_FOOT_START = 20000;
-    public static final int TYPE_FOOT_END = 29999;
+    int TYPE_ITEM_START = 0;
+    int TYPE_ITEM_END = 9999;
+    int TYPE_HEAD_START = 10000;
+    int TYPE_HEAD_END = 19999;
+    int TYPE_FOOT_START = 20000;
+    int TYPE_FOOT_END = 29999;
 }

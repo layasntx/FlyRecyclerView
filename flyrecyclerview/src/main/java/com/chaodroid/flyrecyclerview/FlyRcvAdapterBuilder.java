@@ -6,16 +6,16 @@ import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 
-import com.chaodroid.flyandroid.recyclerview.bean.RcvFootView;
-import com.chaodroid.flyandroid.recyclerview.bean.RcvHeadView;
-import com.chaodroid.flyandroid.recyclerview.bean.RcvItemView;
-import com.chaodroid.flyandroid.recyclerview.bean.RcvViewType;
-import com.chaodroid.flyandroid.recyclerview.handler.RcvBindHandler;
-import com.chaodroid.flyandroid.recyclerview.handler.RcvCreateHandler;
-import com.chaodroid.flyandroid.recyclerview.handler.RcvViewTypeHandler;
-import com.chaodroid.flyandroid.recyclerview.listener.RcvItemClickListener;
-import com.chaodroid.flyandroid.recyclerview.listener.RcvItemLongClickListener;
-import com.chaodroid.flyandroid.recyclerview.listener.RcvScrollBottomListener;
+import com.chaodroid.flyrecyclerview.bean.RcvFootView;
+import com.chaodroid.flyrecyclerview.bean.RcvHeadView;
+import com.chaodroid.flyrecyclerview.bean.RcvItemView;
+import com.chaodroid.flyrecyclerview.bean.RcvViewType;
+import com.chaodroid.flyrecyclerview.handler.RcvBindHandler;
+import com.chaodroid.flyrecyclerview.handler.RcvCreateHandler;
+import com.chaodroid.flyrecyclerview.handler.RcvViewTypeHandler;
+import com.chaodroid.flyrecyclerview.listener.RcvItemClickListener;
+import com.chaodroid.flyrecyclerview.listener.RcvItemLongClickListener;
+import com.chaodroid.flyrecyclerview.listener.RcvScrollBottomListener;
 
 import java.util.ArrayList;
 import java.util.List;

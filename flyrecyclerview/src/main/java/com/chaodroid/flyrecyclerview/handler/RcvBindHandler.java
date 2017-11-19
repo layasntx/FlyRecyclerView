@@ -1,6 +1,7 @@
 package com.chaodroid.flyrecyclerview.handler;
 
-import com.chaodroid.flyandroid.recyclerview.base.RcvBaseHolder;
+
+import com.chaodroid.flyrecyclerview.base.RcvBaseHolder;
 
 /**
  * Created by CHEN on 2016/11/13.

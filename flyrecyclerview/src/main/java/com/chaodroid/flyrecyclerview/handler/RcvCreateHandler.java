@@ -6,7 +6,8 @@ package com.chaodroid.flyrecyclerview.handler;
 
 import android.view.ViewGroup;
 
-import com.chaodroid.flyandroid.recyclerview.base.RcvBaseHolder;
+import com.chaodroid.flyrecyclerview.base.RcvBaseHolder;
+
 
 public interface RcvCreateHandler {
     /**

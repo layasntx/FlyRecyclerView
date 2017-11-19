@@ -3,8 +3,8 @@ package com.chaodroid.flyrecyclerview.bean;
 import android.support.annotation.IntRange;
 import android.support.annotation.NonNull;
 
-import com.chaodroid.flyandroid.recyclerview.handler.RcvBindHandler;
-import com.chaodroid.flyandroid.recyclerview.handler.RcvCreateHandler;
+import com.chaodroid.flyrecyclerview.handler.RcvBindHandler;
+import com.chaodroid.flyrecyclerview.handler.RcvCreateHandler;
 
 import java.util.List;
 
