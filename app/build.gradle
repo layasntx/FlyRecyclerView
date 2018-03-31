@@ -1,11 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion var.compileSdkVersion
+    buildToolsVersion var.buildToolsVersion
     defaultConfig {
         applicationId "com.chaodroid.flyrecyclerview"
-        minSdkVersion 16
-        targetSdkVersion 26
+        minSdkVersion var.minSdkVersion
+        targetSdkVersion var.targetSdkVersion
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"

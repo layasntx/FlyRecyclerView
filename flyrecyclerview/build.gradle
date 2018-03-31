@@ -1,36 +1,51 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+publish {
+    userOrg = 'layasntx'                        //bintray注册的用户名
+    groupId = 'com.chaodroid.flyrecyclerview'   //compile引用时的第1部分 jcenter 路径
+    artifactId = 'FlyRecyclerView'              //compile引用时的第2部分 项目名
+    publishVersion = '1.0.0'                    //compile引用时的第3部分 版本号
+    desc = 'This is a library for recyclerView head and foot and loadmore'
+    website = 'https://github.com/layasntx/FlyRecyclerView'
+}
 
 android {
-    compileSdkVersion 26
-
-
-
+    compileSdkVersion var.compileSdkVersion
+    buildToolsVersion var.buildToolsVersion
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 26
+        minSdkVersion var.minSdkVersion
+        targetSdkVersion var.targetSdkVersion
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
-
+    lintOptions {
+        abortOnError false
+    }
     buildTypes {
+        debug {
+            minifyEnabled false
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
-    }
 
+        android.libraryVariants.all { variant ->
+            variant.outputs.all {
+                outputFileName = getProject().name + "-" + variant.baseName + "-${defaultConfig.versionName}.aar"
+            }
+        }
+    }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-
-    implementation "com.android.support:appcompat-v7:$support_version"
-    implementation "com.android.support:recyclerview-v7:$support_version"
+    implementation "com.android.support:appcompat-v7:$android_support"
+    implementation "com.android.support:recyclerview-v7:$android_support"
 }

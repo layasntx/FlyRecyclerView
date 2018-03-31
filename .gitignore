@@ -7,3 +7,8 @@
 /build
 /captures
 .externalNativeBuild
+/.idea/
+/build/
+/FlyRecyclerView.iml
+!/.idea/misc.xml
+/.idea/misc.xml
